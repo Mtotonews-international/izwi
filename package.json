@@ -1,0 +1,22 @@
+{
+  "name": "izwi",
+  "version": "0.1.0",
+  "description": "Izwi: a safe space for children and young people to learn creative skills, share their work and act on causes. Built by Mtoto News.",
+  "private": true,
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/api.test.js",
+    "seed": "node scripts/seed-demo.js",
+    "create-moderator": "node scripts/create-moderator.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}
